@@ -1,13 +1,5 @@
-alert('Hello world');
-
-let favoriteFood = 'couscous';
-document.write(favoriteFood);
-favoriteFood = 'pizza';
-document.write(favoriteFood);
-
-//some simple math
-let simpleAddition = 2 + 2;
-document.write(simpleAddition);
-let size = 100;
-let doubleSize = size * 2;
-document.write(doubleSize);
+let pokemonList = [
+    {name:"Bulbasaur", height:0.7, types:["grass","poison"]},
+    {name:"Ivysaur", height:1, types:["grass","poison"]},
+    {name:"Venusaur", height:2, types:["grass","poison"]}
+];
