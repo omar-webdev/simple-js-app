@@ -14,3 +14,8 @@ for (let i = 0; i < pokemonList.length; i++) {
         document.write(pokemonList[i].name + " (Height:" + pokemonList[i].height + ") " + "that's a big pokemon." + "<br/>" + "<br/>")
     }
 }
+
+pokemonList.forEach(function(pokemon){
+    document.write(pokemon.name + ': ' + '</br>' + 'Height: '+ pokemon.height + '</br>' + 'Type: ' + pokemon.types + '<br>' + '<br>')
+});
+    
