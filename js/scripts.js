@@ -17,11 +17,12 @@
 
 
 //forEach function
-pokemonList.forEach(function(pokemon){
-    document.write(pokemon.name + ': ' + '</br>' + 'Height: '+ pokemon.height + '</br>' + 'Type: ' + pokemon.types + '<br>' + '<br>')
-});
+// pokemonRepository.forEach(function(pokemon){
+//     document.write(pokemon.name + ': ' + '</br>' + 'Height: '+ pokemon.height + '</br>' + 'Type: ' + pokemon.types + '<br>' + '<br>')
+// });
   
-  
+ //wrapping the array in a IIFE 
+ //creating a pokemonRepository and assigning it to pokemonList
 let pokemonRepository = (function () {
     let pokemonList = [
         {name:"Bulbasaur", height:0.7, types:["grass","poison"]},
@@ -42,3 +43,10 @@ let pokemonRepository = (function () {
       getAll: getAll
     };
   })();
+//console.log(pokemonRepository.getAll());    
+//test+
+
+//forEach function
+pokemonRepository.forEach(getAll(pokemon){
+      document.write(pokemon.name + ': ' + '</br>' + 'Height: '+ pokemon.height + '</br>' + 'Type: ' + pokemon.types + '<br>' + '<br>')
+   });
